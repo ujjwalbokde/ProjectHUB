@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Management System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo">
+                <i class="fas fa-project-diagram"></i>
+                <span>ProjectHub</span>
+            </div>
+            <div class="nav-item active">
+                <i class="fas fa-home"></i>
+                <span>Dashboard</span>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-tasks"></i>
+                <span>My Tasks</span>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-folder"></i>
+                <span>Projects</span>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-calendar"></i>
+                <span>Calendar</span>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-users"></i>
+                <span>Team</span>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-chart-bar"></i>
+                <span>Reports</span>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-cog"></i>
+                <span>Settings</span>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main">
+            <!-- Header -->
+            <div class="header">
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search projects, tasks...">
+                </div>
+                <div class="user-profile">
+                    <div class="user-avatar">JS</div>
+                    <div class="user-name">John Smith</div>
+                </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="stats">
+                <div class="stat-card">
+                    <div class="stat-icon blue">
+                        <i class="fas fa-folder"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>12</h3>
+                        <p>Total Projects</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon purple">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>42</h3>
+                        <p>Total Tasks</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon green">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>28</h3>
+                        <p>Completed Tasks</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon orange">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>8</h3>
+                        <p>Team Members</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projects -->
+            <div class="section-header">
+                <h2 class="section-title">Active Projects</h2>
+                <span class="view-all">View All</span>
+            </div>
+            <div class="projects">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">Website Redesign</h3>
+                        <span class="project-category category-design">Design</span>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-description">Redesign the company website with modern UI/UX principles and improved user flow.</p>
+                        <div class="progress-container">
+                            <div class="progress-info">
+                                <span>Progress</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-value progress-high"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <div class="team-members">
+                            <div class="member blue">JS</div>
+                            <div class="member purple">AK</div>
+                            <div class="member">TM</div>
+                        </div>
+                        <div class="due-date">
+                            <i class="far fa-calendar-alt"></i>
+                            <span>May 20, 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">Mobile App Development</h3>
+                        <span class="project-category category-development">Development</span>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-description">Create a cross-platform mobile application for customer engagement and support.</p>
+                        <div class="progress-container">
+                            <div class="progress-info">
+                                <span>Progress</span>
+                                <span>60%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-value progress-medium"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <div class="team-members">
+                            <div class="member green">RJ</div>
+                            <div class="member">LM</div>
+                            <div class="member purple">AK</div>
+                        </div>
+                        <div class="due-date">
+                            <i class="far fa-calendar-alt"></i>
+                            <span>June 15, 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">Marketing Campaign</h3>
+                        <span class="project-category category-marketing">Marketing</span>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-description">Launch a digital marketing campaign to increase brand awareness and customer acquisition.</p>
+                        <div class="progress-container">
+                            <div class="progress-info">
+                                <span>Progress</span>
+                                <span>25%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-value progress-low"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <div class="team-members">
+                            <div class="member">TM</div>
+                            <div class="member blue">JS</div>
+                            <div class="member">LM</div>
+                        </div>
+                        <div class="due-date">
+                            <i class="far fa-calendar-alt"></i>
+                            <span>July 10, 2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tasks -->
+            <div class="section-header">
+                <h2 class="section-title">Recent Tasks</h2>
+                <span class="view-all">View All</span>
+            </div>
+            <div class="tasks">
+                <div class="task-item">
+                    <div class="task-checkbox checked">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <div class="task-content">
+                        <h4 class="task-title">Create wireframes for homepage</h4>
+                        <p class="task-project">Website Redesign</p>
+                    </div>
+                    <div class="task-meta">
+                        <span class="task-priority priority-high">High</span>
+                        <span class="task-due">May 15, 2025</span>
+                    </div>
+                </div>
+                <div class="task-item">
+                    <div class="task-checkbox"></div>
+                    <div class="task-content">
+                        <h4 class="task-title">Implement user authentication</h4>
+                        <p class="task-project">Mobile App Development</p>
+                    </div>
+                    <div class="task-meta">
+                        <span class="task-priority priority-medium">Medium</span>
+                        <span class="task-due">May 18, 2025</span>
+                    </div>
+                </div>
+                <div class="task-item">
+                    <div class="task-checkbox"></div>
+                    <div class="task-content">
+                        <h4 class="task-title">Design social media graphics</h4>
+                        <p class="task-project">Marketing Campaign</p>
+                    </div>
+                    <div class="task-meta">
+                        <span class="task-priority priority-low">Low</span>
+                        <span class="task-due">May 20, 2025</span>
+                    </div>
+                </div>
+                <div class="task-item">
+                    <div class="task-checkbox checked">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <div class="task-content">
+                        <h4 class="task-title">Conduct user testing</h4>
+                        <p class="task-project">Website Redesign</p>
+                    </div>
+                    <div class="task-meta">
+                        <span class="task-priority priority-medium">Medium</span>
+                        <span class="task-due">May 12, 2025</span>
+                    </div>
+                </div>
+                <div class="task-item">
+                    <div class="task-checkbox"></div>
+                    <div class="task-content">
+                        <h4 class="task-title">Optimize database queries</h4>
+                        <p class="task-project">Mobile App Development</p>
+                    </div>
+                    <div class="task-meta">
+                        <span class="task-priority priority-high">High</span>
+                        <span class="task-due">May 22, 2025</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
